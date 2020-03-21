@@ -1,0 +1,31 @@
+.color1{
+    background-color: #030027;
+}
+.color2{
+    background-color: #3d3b3c;
+}
+.color3{
+    background-color: #0b4f6c;
+}
+.color4{
+    background-color: #00120b;
+}
+.color5{
+    background-color: #04151f;
+}
+.palito{
+    border: 1px solid rgba(var(--ipt-on-baseAlt-rgb),.16);
+    order: 5;
+    width: 1px;
+    height: 2rem;
+    margin: 0px 0.5rem;
+}
+.mm{
+    width: 80%;
+}
+.md{
+    margin-right: 16px;
+}
+.md2{
+    margin-left: 32px;
+}
