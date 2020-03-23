@@ -14,12 +14,13 @@ import Carousel from 'react-bootstrap/Carousel';
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel className="carr2" activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
-          className="d-block w-100 img-responsive"
+          className="d-block carr img-responsive"
           src="https://media.discordapp.net/attachments/361618001243668492/690699730199511081/SMB_Movie_Poster.png"
           alt="First slide"
+         
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -28,9 +29,10 @@ import Carousel from 'react-bootstrap/Carousel';
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          className="d-block carr img-responsive"
+          src="https://media.discordapp.net/attachments/361618001243668492/691389461506031676/91089194_819150318596699_4613583895756013568_n.png"
           alt="Second slide img-responsive"
+
         />
 
         <Carousel.Caption>
@@ -40,9 +42,10 @@ import Carousel from 'react-bootstrap/Carousel';
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 img-responsive"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          className="d-block carr img-responsive"
+          src="https://media.discordapp.net/attachments/315005339613265923/690700069573361714/latest.png?width=330&height=475"
           alt="Third slide"
+         
         />
 
         <Carousel.Caption>
