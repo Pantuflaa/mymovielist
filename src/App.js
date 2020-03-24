@@ -13,6 +13,7 @@ function App() {
             <Header></Header>
       </div>
       <ControlledCarousel></ControlledCarousel>
+      <br></br>
       <PeliculasHandler></PeliculasHandler>
 
      

@@ -37,3 +37,23 @@
 .carr2{
     margin-top: 8px;
 }
+.dorado{
+    color: #efb810;
+}
+.negro{
+    color:#000000
+}
+.score{
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+    border: 2px solid #000000;
+    background-color: #efb810;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto; 
+}

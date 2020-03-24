@@ -11,12 +11,12 @@ import Button from 'react-bootstrap/Button';
 const Pelicula = (props) =>{
 
     return(
-        <Card text='white' border="info" style={{ width: '15rem'}} className="color2">
-        <Card.Img variant="top" src="https://media.discordapp.net/attachments/361618001243668492/690382846379950121/FB_IMG_1584670402868.jpg?width=488&height=475" />
+        <Card text='white' border="info" style={{ width: '230px', height:'36rem'}} className="color2">
+        <Card.Img variant="top" src={"https://image.tmdb.org/t/p/w500/"+ props.objetito["poster_path"]}/>
         <Card.Body>
-            <Card.Title>Título</Card.Title>
+            <Card.Title>{props.objetito["title"]}</Card.Title>
             <Card.Text>
-               Someshit
+               {props.objetito["vote_average"]+"/10"}
             </Card.Text>
             <Button size="sm" variant="warning">Ver</Button>
             </Card.Body>
