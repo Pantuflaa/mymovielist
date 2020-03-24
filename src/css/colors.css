@@ -29,3 +29,30 @@
 .md2{
     margin-left: 32px;
 }
+.left{
+    margin-right: 0;
+}
+.right{
+    margin-left: 60%;
+}
+.text{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+#rcorners1 {
+    border-radius: 25px;
+    background: #0b4f6c;
+    padding: 20px;
+    margin-top: 15px;
+  }
+#star{
+    margin-left: 80%;
+}
+#movie{
+    margin-top: 15px;
+}
+#synopsis{
+    background: #3d3b3c;
+    padding: 20px;
+    border-radius: 25px;
+}
