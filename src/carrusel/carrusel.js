@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React, { Component } from 'react'; 
 
 import '../App.css';
 
@@ -6,57 +6,79 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 
- const ControlledCarousel = () => {
-  const [index, setIndex] = useState(0);
+const axios = require('axios');
+class ControlledCarousel extends Component {
+  state = {
+    index :0,
+     movies:["xd", "xp","lol"]
+  }
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
+  handleSelect = (selectedIndex, e) => {
+    this.setState({index:selectedIndex});
   };
 
-  return (
-    <Carousel className="carr2" activeIndex={index} onSelect={handleSelect}>
+  async componentDidMount () {
+    const response = await axios.get('https://api.themoviedb.org/3/movie/now_playing?api_key=466c19159235f9ce92fe9604a953aba2&language=es&page=1')
+    
+    const aux=[];
+    let i =0;
+    for(i= 0; i< 3; i++){
+       aux.push(response["data"]["results"][i])
+    }
+    this.setState({movies:aux});
+   
+    
+  };
+
+ 
+
+  
+ 
+
+  render () {
+    return (
+    <Carousel className="carr2" activeIndex={this.state.index} onSelect={this.handleSelect}>
       <Carousel.Item>
         <img
           className="d-block carr img-responsive"
-          src="https://media.discordapp.net/attachments/361618001243668492/690699730199511081/SMB_Movie_Poster.png"
+          src={"https://image.tmdb.org/t/p/w1280/" +this.state.movies[0]["backdrop_path"]}
           alt="First slide"
          
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>{this.state.movies[0]["title"]}</h3>
+          <p>{this.state.movies[0][ "vote_average"]+"/10"}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block carr img-responsive"
-          src="https://media.discordapp.net/attachments/361618001243668492/691389461506031676/91089194_819150318596699_4613583895756013568_n.png"
-          alt="Second slide img-responsive"
+          src={"https://image.tmdb.org/t/p/w1280/" +this.state.movies[1]["backdrop_path"]}
+           alt="Second slide img-responsive"
 
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>{this.state.movies[1]["title"]}</h3>
+          <p>{this.state.movies[1][ "vote_average"]+"/10"}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block carr img-responsive"
-          src="https://media.discordapp.net/attachments/315005339613265923/690700069573361714/latest.png?width=330&height=475"
+          src={"https://image.tmdb.org/t/p/w1280/" +this.state.movies[2]["backdrop_path"]}
           alt="Third slide"
          
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>{this.state.movies[2]["title"]}</h3>
+          <p>{this.state.movies[2][ "vote_average"]+"/10"}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
+}
 }
 
 //render(<ControlledCarousel />);

@@ -4,6 +4,7 @@ import './App.css';
 
 import Header from './header/header.js';
 import ControlledCarousel from './carrusel/carrusel.js'
+import PeliculasHandler from './Bottom/PeliculasHandler.js'
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
             <Header></Header>
       </div>
       <ControlledCarousel></ControlledCarousel>
+      <PeliculasHandler></PeliculasHandler>
 
+     
     </div>
 
   );
