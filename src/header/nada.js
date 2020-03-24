@@ -30,3 +30,59 @@
 </ul>
 </div>
 </nav>
+
+
+
+
+
+
+
+<Navbar className=" color3">
+<Navbar.Brand href="#home">
+    <img src="https://media.discordapp.net/attachments/315005339613265923/689333380378001508/logito.png?width=475&height=475" width="100" height="100" alt=""/>
+</Navbar.Brand>
+<Navbar.Toggle aria-controls="basic-navbar-nav" />
+<Navbar.Collapse id="basic-navbar-nav" >
+<Nav className="mr-auto">
+
+ <InputGroup className="mb-3">
+    <FormControl
+    placeholder="Buscar"
+    aria-label="Recipient's username"
+    aria-describedby="basic-addon2"
+    />
+ <InputGroup.Append>
+    <Button variant="outline-success">Buscar</Button>
+ </InputGroup.Append>
+</InputGroup>
+   <NavLink><NavItem inline><Button variant="warning" className="justify-content-end">Registrate</Button>{' '}</NavItem> </NavLink> 
+   <NavLink><NavItem inline> <Button variant="outline-danger">Logeate</Button>{' '}</NavItem></NavLink> 
+    
+</Nav>
+
+</Navbar.Collapse>
+</Navbar>
+
+  
+<Navbar className=" color3">
+<Navbar.Brand href="#home">
+    <img src="https://media.discordapp.net/attachments/315005339613265923/689333380378001508/logito.png?width=475&height=475" width="100" height="100" alt=""/>
+</Navbar.Brand>
+<Navbar.Toggle aria-controls="basic-navbar-nav" />
+<Navbar.Collapse id="basic-navbar-nav" >
+    <Nav className="mr-auto">
+    <InputGroup size="md">
+        <FormControl
+        placeholder="Buscar"
+        aria-label="Recipient's username"
+        aria-describedby="basic-addon2"
+        />
+        <InputGroup.Append>
+            <Button variant="outline-success">Buscar</Button>
+        </InputGroup.Append>
+    </InputGroup>
+    </Nav>
+    <Form inline><Button variant="warning" >Registrate</Button>{' '}</Form>  
+    <Form inline> <Button variant="outline-danger">Logeate</Button>{' '}</Form>  
+</Navbar.Collapse>
+</Navbar>
