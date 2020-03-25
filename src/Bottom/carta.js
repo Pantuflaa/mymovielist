@@ -18,7 +18,7 @@ const Pelicula = (props) =>{
             <Card.Text>
                {props.objetito["vote_average"]+"/10"}
             </Card.Text>
-            <Button size="sm" variant="warning">Ver</Button>
+            <Button href= {"/"+props.objetito.id} size="sm" variant="warning">Ver</Button>
             </Card.Body>
         </Card>
     );

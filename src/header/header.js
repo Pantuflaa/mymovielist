@@ -15,7 +15,7 @@ const Header = () =>{
     return ( 
    
         <Navbar className=" color3" expand="lg">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             <img src="https://media.discordapp.net/attachments/315005339613265923/689333380378001508/logito.png?width=475&height=475" width="100" height="100" alt=""/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
