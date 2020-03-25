@@ -74,7 +74,7 @@ class PeliculasHandler extends Component {
                         <Col sm={8} className="color3">
                         <Nav defaultActiveKey="/home" as="ul" className='color3'>
                             <Button className="izquierda" onClick={this.Atras}>Prev</Button>
-                            <span className="center dorado">Popular</span>
+                            <span id = "popular" className="center dorado">Popular</span>
                             <Button className="derecha" onClick={this.Siguiente}>Next</Button>
                         </Nav>
                         <CardColumns>
@@ -84,8 +84,8 @@ class PeliculasHandler extends Component {
                         </CardColumns>
                         </Col>
                         <Col sm={4}>
-                        <Nav defaultActiveKey="/home" as="ul" className='color2'>  
-                        <span className="dorado center">Top Rated Movies</span>
+                        <Nav defaultActiveKey="/home" as="ul" className='color2 '>  
+                        <span className="dorado center" id = "popular">Top Rated Movies</span>
                         </Nav> 
                         {
                         this.state.PeliculasTop10.map(

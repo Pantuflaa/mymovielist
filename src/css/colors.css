@@ -49,7 +49,7 @@
   }
 #star{
     margin-top: 10px;
-    margin-left: 93%;
+    margin-right: 10%;
 }
 #movie{
     margin-top: 15px;
@@ -86,14 +86,15 @@
     font-family: "Times New Roman";
     font-size: 170%;
     color: white;
-    margin-right: 100%;
+    margin-right: 0%;
     text-shadow: 2px 2px 1px #000000;
 }
 .cont{
     font-family: "Times New Roman";
     font-size: 100%;
     color: white;
-    margin-right: 100%;
+    margin-right: 0%;
+    margin-left: 10px;
     text-shadow: 2px 2px 1px #000000;
 }
 .dorado{
@@ -116,10 +117,33 @@
     margin-left: auto;
     margin-right: auto; 
 }
-
 .derecha{
+    margin-top: 10px;
     margin-left: auto;
+    margin-bottom: 10px;
 }
 .izquierda{
+    margin-top: 10px;
     margin-right: auto;
+    margin-bottom: 10px;
+}
+.related{
+    background: #3d3b3c;
+    padding: 8px;
+    border-radius: 25px;
+    color: #efb810;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 100%;
+    margin-top: 10px;
+}
+#popular{
+    font-size: 200%;
+    text-shadow: 2px 2px 4px #000000;
+}
+.top10{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.space{
+    margin-top: 20px;
 }

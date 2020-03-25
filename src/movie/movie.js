@@ -66,7 +66,9 @@ class Movie extends Component{
                         <Col className = "text">
                             <span className = "title">{this.state.estandar[0].title} </span><span className = "year">({this.state.estandar[0]["release_date"].split("-")[0]})</span>
                         </Col>
-                        <Col>    
+                        <Col>                           
+                        </Col>
+                        <Col>
                             <img
                                 id = "star"
                                 height = "50px"
@@ -74,12 +76,10 @@ class Movie extends Component{
                                 className="mr-3"
                                 src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png"
                                 alt="Generic placeholder"
-                            />                         
-                        </Col>
-                        <Col>
+                            />  
                             <span className = "rate">{this.state.estandar[0].vote_average}/10</span>
-                            <br></br>
-                            <span className = "cont">{this.state.estandar[0].vote_count}</span>
+        
+                            <span className = "cont">({this.state.estandar[0].vote_count})</span>
                         </Col>
                     </Row>
                     <Row>
