@@ -62,8 +62,8 @@ class Recomended extends Component {
                             />
                         
                             <Carousel.Caption>
-                                <h3>{this.state.movies[0]["title"]}</h3>
-                                <p>{this.state.movies[0][ "vote_average"]+"/10"}</p>
+                                <span className = "caption" >{this.state.movies[0]["title"]}</span>
+                                <p className = "caption">{this.state.movies[0][ "vote_average"]+"/10"}</p>
                             </Carousel.Caption>
                         </a>  
                         </Col>
@@ -77,8 +77,8 @@ class Recomended extends Component {
                             />
                         
                             <Carousel.Caption>
-                                <h3>{this.state.movies[1]["title"]}</h3>
-                                <p>{this.state.movies[1][ "vote_average"]+"/10"}</p>
+                                <span className = "caption">{this.state.movies[1]["title"]}</span>
+                                <p className = "caption">{this.state.movies[1][ "vote_average"]+"/10"}</p>
                             </Carousel.Caption>
                         </a>
                         </Col>
@@ -91,8 +91,8 @@ class Recomended extends Component {
                                 id = "reco"
                             />
                             <Carousel.Caption>
-                                <h3>{this.state.movies[2]["title"]}</h3>
-                                <p>{this.state.movies[2][ "vote_average"]+"/10"}</p>
+                                <span className = "caption">{this.state.movies[2]["title"]}</span>
+                                <p className = "caption">{this.state.movies[2][ "vote_average"]+"/10"}</p>
                             </Carousel.Caption>
                         </a>
                         </Col>
@@ -113,8 +113,8 @@ class Recomended extends Component {
                                 id = "reco"
                             />
                                 <Carousel.Caption>
-                                    <h3>{this.state.movies[3]["title"]}</h3>
-                                    <p>{this.state.movies[3][ "vote_average"]+"/10"}</p>
+                                    <span className = "caption">{this.state.movies[3]["title"]}</span>
+                                    <p className = "caption">{this.state.movies[3][ "vote_average"]+"/10"}</p>
                                 </Carousel.Caption>
                         </a>
                         </Col>
@@ -127,8 +127,8 @@ class Recomended extends Component {
                                 id = "reco"
                             />  
                             <Carousel.Caption>
-                                <h3>{this.state.movies[4]["title"]}</h3>
-                                <p>{this.state.movies[4][ "vote_average"]+"/10"}</p>
+                                <span className = "caption">{this.state.movies[4]["title"]}</span>
+                                <p className = "caption">{this.state.movies[4][ "vote_average"]+"/10"}</p>
                             </Carousel.Caption>
                         </a>
                         </Col>
@@ -141,7 +141,7 @@ class Recomended extends Component {
                                 id = "reco"
                             />  
                             <Carousel.Caption>
-                                <span>    
+                                <span className = "caption">    
                                     <h3>{this.state.movies[5]["title"]}</h3>
                                     <p>{this.state.movies[5][ "vote_average"]+"/10"}</p>
                                 </span>
@@ -163,7 +163,7 @@ class Recomended extends Component {
                                 id = "reco"
                             />  
                             <Carousel.Caption>
-                                <h3>{this.state.movies[6]["title"]}</h3>
+                                <span className = "caption">{this.state.movies[6]["title"]}</span>
                                 <p>{this.state.movies[6][ "vote_average"]+"/10"}</p>
                             </Carousel.Caption>
                         </a>  
@@ -177,8 +177,8 @@ class Recomended extends Component {
                                 id = "reco"
                             />
                             <Carousel.Caption>
-                                <h3>{this.state.movies[7]["title"]}</h3>
-                                <p>{this.state.movies[7][ "vote_average"]+"/10"}</p>
+                                <span className = "caption">{this.state.movies[7]["title"]}</span>
+                                <p className = "caption">{this.state.movies[7][ "vote_average"]+"/10"}</p>
                             </Carousel.Caption>
                         </a>  
                         </Col>
@@ -191,8 +191,8 @@ class Recomended extends Component {
                                 id = "reco"
                             /> 
                             <Carousel.Caption>
-                                <h3>{this.state.movies[8]["title"]}</h3>
-                                <p>{this.state.movies[8][ "vote_average"]+"/10"}</p>
+                                <span className = "caption">{this.state.movies[8]["title"]}</span>
+                                <p className = "caption">{this.state.movies[8][ "vote_average"]+"/10"}</p>
                             </Carousel.Caption>
                         </a>  
                         </Col>

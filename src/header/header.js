@@ -63,20 +63,18 @@ class Header extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
             <Nav className=" mr-auto ml-auto">
-            <Nav.Link>
-            <InputGroup className="mb-3">
-                <FormControl
-                placeholder=""
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-                onChange={this.handleChange}
-                />
-                <InputGroup.Append>
-                    <Button variant="outline-secondary" onClick={this.buscar}>Buscar</Button>
-                </InputGroup.Append>
-            </InputGroup>
-            
-            </Nav.Link>
+                <InputGroup className="mb-0">
+                    <FormControl
+                    placeholder=""
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                    onChange={this.handleChange}
+                    
+                    />
+                    <InputGroup.Append>
+                        <Button variant="outline-secondary" onClick={this.buscar}>Buscar</Button>
+                    </InputGroup.Append>
+                </InputGroup>
             </Nav>
             <Form inline><Button variant="warning" className="md" disabled>Registrate</Button>{' '}</Form>  
             <Form inline> <Button variant="outline-danger" disabled>Logeate</Button>{' '}</Form>  
