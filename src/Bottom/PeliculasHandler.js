@@ -71,7 +71,7 @@ class PeliculasHandler extends Component {
         (
                 <Container >
                     <Row >
-                        <Col sm={8} className="color3">
+                        <Col md={8}  sm={12} className="color3">
                         <Nav defaultActiveKey="/home" as="ul" className='color3'>
                             <Button className="izquierda" onClick={this.Atras}>Prev</Button>
                             <span id = "popular" className="center dorado">Popular</span>
@@ -83,7 +83,7 @@ class PeliculasHandler extends Component {
                         )}
                         </CardColumns>
                         </Col>
-                        <Col sm={4}>
+                        <Col sm={12} md={4}>
                         <Nav defaultActiveKey="/home" as="ul" className='color2 '>  
                         <span className="dorado center" id = "popular">Top Rated Movies</span>
                         </Nav> 
@@ -94,6 +94,7 @@ class PeliculasHandler extends Component {
                         
                         </Col>
                      </Row>
+                     <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 </Container>
             
         );

@@ -63,8 +63,7 @@ class Header extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
             <Nav className=" mr-auto ml-auto">
-            <Nav.Link>
-            <InputGroup className="mb-3">
+            <InputGroup className="mb-0">
                 <FormControl
                 placeholder=""
                 aria-label="Recipient's username"
@@ -76,7 +75,7 @@ class Header extends Component {
                 </InputGroup.Append>
             </InputGroup>
             
-            </Nav.Link>
+          
             </Nav>
             <Form inline><Button variant="warning" className="md" disabled>Registrate</Button>{' '}</Form>  
             <Form inline> <Button variant="outline-danger" disabled>Logeate</Button>{' '}</Form>  

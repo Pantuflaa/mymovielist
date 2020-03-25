@@ -15,7 +15,7 @@ const Top10 = (props) => {
     return(        
         <Card className="bg-dark text-white" style={{ height:'174px'}} >
         <a href={"/"+props.objetazo.id}>
-        <Card.Img  src={"https://image.tmdb.org/t/p/w500/"+ props.objetazo["backdrop_path"]} alt="Card image" />
+        <Card.Img  src={"https://image.tmdb.org/t/p/w500/"+ props.objetazo["backdrop_path"]} alt="Responsive image"/>
         <Card.ImgOverlay>
         <Card.Title className = "top10">{props.objetazo["title"]}</Card.Title>
         <Card.Text>
