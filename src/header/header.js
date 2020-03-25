@@ -46,16 +46,16 @@ class Header extends Component {
         else{
             alert("Movie not found");
         }
-        
-        
-       
+
+
+
     }
     handleChange (event) {
         this.setState({valor: event.target.value})
     }
     render (){
-    return ( 
-   
+    return (
+
         <Navbar className=" color3" expand="lg">
         <Navbar.Brand href="/">
             <img src="https://media.discordapp.net/attachments/315005339613265923/689333380378001508/logito.png?width=475&height=475" width="100" height="100" alt=""/>
@@ -74,11 +74,11 @@ class Header extends Component {
                     <Button variant="outline-secondary" onClick={this.buscar}>Buscar</Button>
                 </InputGroup.Append>
             </InputGroup>
-            
-          
+
+
             </Nav>
-            <Form inline><Button variant="warning" className="md" disabled>Registrate</Button>{' '}</Form>  
-            <Form inline> <Button variant="outline-danger" disabled>Logeate</Button>{' '}</Form>  
+            <Form inline><Button variant="warning" className="md" disabled>Registrate</Button>{' '}</Form>
+            <Form inline> <Button variant="outline-danger" disabled>Logeate</Button>{' '}</Form>
         </Navbar.Collapse>
         </Navbar>
     );
