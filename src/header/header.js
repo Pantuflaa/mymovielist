@@ -38,9 +38,15 @@ class Header extends Component {
         const response = await axios.get('https://api.themoviedb.org/3/search/movie?api_key=466c19159235f9ce92fe9604a953aba2&query='+newName)
         console.log("response")
         console.log(response)
-        if(response.data.results[0].id!=undefined){
-            window.location.href="http://localhost:3000/"+response.data.results[0].id
+        if(response.data.results.length != 0){
+            if(response.data.results[0].id!=undefined){
+                window.location.href="http://localhost:3000/"+response.data.results[0].id
+            }
         }
+        else{
+            alert("Movie not found");
+        }
+        
         
        
     }
@@ -66,7 +72,7 @@ class Header extends Component {
                 onChange={this.handleChange}
                 />
                 <InputGroup.Append>
-                    <Button variant="outline-secondary" onClick={this.buscar}>Button</Button>
+                    <Button variant="outline-secondary" onClick={this.buscar}>Buscar</Button>
                 </InputGroup.Append>
             </InputGroup>
             

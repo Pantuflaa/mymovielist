@@ -41,11 +41,11 @@ class ControlledCarousel extends Component {
           alt="First slide"
          
         />
-        </a>
         <Carousel.Caption>
           <h3>{this.state.movies[0]["title"]}</h3>
           <p>{this.state.movies[0][ "vote_average"]+"/10"}</p>
         </Carousel.Caption>
+      </a>  
       </Carousel.Item>
       <Carousel.Item>
         <a href = {this.state.movies[1].id}>
@@ -55,11 +55,11 @@ class ControlledCarousel extends Component {
            alt="Second slide img-responsive"
 
         />
-        </a>
         <Carousel.Caption>
           <h3>{this.state.movies[1]["title"]}</h3>
           <p>{this.state.movies[1][ "vote_average"]+"/10"}</p>
         </Carousel.Caption>
+      </a>  
       </Carousel.Item>
       <Carousel.Item>
         <a href = {this.state.movies[2].id}>
@@ -69,12 +69,11 @@ class ControlledCarousel extends Component {
           alt="Third slide"
          
         />
-        </a>
-
         <Carousel.Caption>
           <h3>{this.state.movies[2]["title"]}</h3>
           <p>{this.state.movies[2][ "vote_average"]+"/10"}</p>
         </Carousel.Caption>
+      </a>  
       </Carousel.Item>
     </Carousel>
   );

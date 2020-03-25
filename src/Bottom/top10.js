@@ -17,11 +17,11 @@ const Top10 = (props) => {
         <a href={"/"+props.objetazo.id}>
         <Card.Img  src={"https://image.tmdb.org/t/p/w500/"+ props.objetazo["backdrop_path"]} alt="Card image" />
         <Card.ImgOverlay>
-        <Card.Title>{props.objetazo["title"]}</Card.Title>
+        <Card.Title className = "top10">{props.objetazo["title"]}</Card.Title>
         <Card.Text>
            <div className="score"><span className="negro"> {props.objetazo["vote_average"]+"/10"}</span></div> 
         </Card.Text>
-            <Card.Text>{props.objetazo["release_date"]}</Card.Text>
+            <Card.Text className = "top10">{props.objetazo["release_date"]}</Card.Text>
         </Card.ImgOverlay>
         </a>
         </Card>
