@@ -30,11 +30,6 @@ class ControlledCarousel extends Component {
     
   };
 
- 
-
-  
- 
-
   render () {
     return (
     <Carousel className="carr2" activeIndex={this.state.index} onSelect={this.handleSelect}>
