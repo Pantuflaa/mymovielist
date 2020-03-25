@@ -16,7 +16,12 @@ function App() {
         <Header></Header>
         <Movie></Movie>
       </div>
+      <ControlledCarousel></ControlledCarousel>
+      <br></br>
+      <PeliculasHandler></PeliculasHandler>
+      <br></br> 
       <Recomended></Recomended>
+     
     </div>
   );
 }
