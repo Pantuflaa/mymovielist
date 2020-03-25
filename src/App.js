@@ -3,8 +3,11 @@ import React from 'react';
 import './App.css';
 
 import Header from './header/header.js';
-import ControlledCarousel from './carrusel/carrusel.js'
-import PeliculasHandler from './Bottom/PeliculasHandler.js'
+//import ControlledCarousel from './carrusel/carrusel.js'
+//import PeliculasHandler from './Bottom/PeliculasHandler.js'
+import Movie from './movie/movie';
+import Recomended from './recomended/recomended';
+//import Container from 'react-bootstrap/Container'
 
 function App() {
   console.log(window.location.pathname); 
@@ -23,5 +26,6 @@ function App() {
 
   
 }
-
+/*<ControlledCarousel></ControlledCarousel>
+      <PeliculasHandler></PeliculasHandler>*/
 export default App;
