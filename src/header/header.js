@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{ Component } from 'react';
 
 import '../App.css';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,7 +11,43 @@ import InputGroup from 'react-bootstrap/InputGroup'
 
 
 
-const Header = () =>{
+class Header extends Component {
+    constructor (props){
+        super(props)
+        this.state={
+            valor:''
+        }
+        this.handleChange = this.handleChange.bind(this);
+        this.buscar = this.buscar.bind(this);
+
+    }
+    async buscar (event){
+        const axios = require('axios');
+        let string=""
+        let nombre=this.state.valor.split(" ")
+        let newName=""
+        if(nombre.length> 1){
+            nombre.forEach(element => {
+                newName= newName + element + '+'
+            });
+            newName = newName.substring(0, newName.length - 1);
+        }
+        else{
+            newName=nombre
+        }
+        const response = await axios.get('https://api.themoviedb.org/3/search/movie?api_key=466c19159235f9ce92fe9604a953aba2&query='+newName)
+        console.log("response")
+        console.log(response)
+        if(response.data.results[0].id!=undefined){
+            window.location.href="http://localhost:3000/"+response.data.results[0].id
+        }
+        
+       
+    }
+    handleChange (event) {
+        this.setState({valor: event.target.value})
+    }
+    render (){
     return ( 
    
         <Navbar className=" color3" expand="lg">
@@ -22,23 +58,25 @@ const Header = () =>{
         <Navbar.Collapse id="basic-navbar-nav" >
             <Nav className=" mr-auto ml-auto">
             <Nav.Link>
-            <InputGroup size="md">
+            <InputGroup className="mb-3">
                 <FormControl
-                placeholder="Buscar"
+                placeholder=""
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
-                maxLength={255}
+                onChange={this.handleChange}
                 />
                 <InputGroup.Append>
-                    <Button variant="outline-success">Buscar</Button>
+                    <Button variant="outline-secondary" onClick={this.buscar}>Button</Button>
                 </InputGroup.Append>
             </InputGroup>
+            
             </Nav.Link>
             </Nav>
-            <Form inline><Button variant="warning" className="md">Registrate</Button>{' '}</Form>  
-            <Form inline> <Button variant="outline-danger">Logeate</Button>{' '}</Form>  
+            <Form inline><Button variant="warning" className="md" disabled>Registrate</Button>{' '}</Form>  
+            <Form inline> <Button variant="outline-danger" disabled>Logeate</Button>{' '}</Form>  
         </Navbar.Collapse>
         </Navbar>
     );
+    }
 }
 export default Header;

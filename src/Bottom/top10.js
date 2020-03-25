@@ -14,7 +14,8 @@ import Card from 'react-bootstrap/Card';
 const Top10 = (props) => {
     return(        
         <Card className="bg-dark text-white" style={{ height:'174px'}} >
-        <Card.Img src={"https://image.tmdb.org/t/p/w500/"+ props.objetazo["backdrop_path"]} alt="Card image" />
+        <a href={"/"+props.objetazo.id}>
+        <Card.Img  src={"https://image.tmdb.org/t/p/w500/"+ props.objetazo["backdrop_path"]} alt="Card image" />
         <Card.ImgOverlay>
         <Card.Title>{props.objetazo["title"]}</Card.Title>
         <Card.Text>
@@ -22,6 +23,7 @@ const Top10 = (props) => {
         </Card.Text>
             <Card.Text>{props.objetazo["release_date"]}</Card.Text>
         </Card.ImgOverlay>
+        </a>
         </Card>
     );
 }

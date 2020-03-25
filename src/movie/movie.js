@@ -99,26 +99,30 @@ class Movie extends Component{
                                     </p>
                                         <p align = "left"> 
                                             <strong> Director: </strong> 
-                                            {this.state.directore.map(
+                                            {(this.state.director===undefined)? "" : this.state.directore.map(
                                                  (director) => director.name+", "
                                             )}
                                              <br /> 
                                             <strong> Writers: </strong> 
-                                            {this.state.escritore.map(
+                                            {(this.state.escritore===undefined)?"" :this.state.escritore.map(
                                                  (escritor) => escritor.name+", "
                                             )}
                                              <br /> 
                                             <strong> Stars: </strong> 
-                                            {this.state.actore.map(
-                                                 (actor) => actor.name+", "
-                                            )}
+                                            {(this.state.actore===undefined)?"" :
+                                            this.state.actore.map(
+                                              
+                                                 (actor) =>(actor!=undefined)? actor.name+", " : ""
+                                                 
+                                            )
+                                            }
                                              <br /> 
                                         </p>
                                 </Media.Body>
                             </Row>
                             <Row>
                                 <Col>
-                                <iframe id ="video" width="500" height="400" src={"https://www.youtube.com/embed/"+this.state.video[0].key} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe id ="video" width="500" height="400" src={(this.state.video[0]===undefined) ? "" : "https://www.youtube.com/embed/"+this.state.video[0].key} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </Col>
                             </Row>
                         </Col>

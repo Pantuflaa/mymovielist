@@ -39,37 +39,42 @@ class ControlledCarousel extends Component {
     return (
     <Carousel className="carr2" activeIndex={this.state.index} onSelect={this.handleSelect}>
       <Carousel.Item>
+        <a href ={this.state.movies[0].id}>
         <img
           className="d-block carr img-responsive"
           src={"https://image.tmdb.org/t/p/w1280/" +this.state.movies[0]["backdrop_path"]}
           alt="First slide"
          
         />
+        </a>
         <Carousel.Caption>
           <h3>{this.state.movies[0]["title"]}</h3>
           <p>{this.state.movies[0][ "vote_average"]+"/10"}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+        <a href = {this.state.movies[1].id}>
         <img
           className="d-block carr img-responsive"
           src={"https://image.tmdb.org/t/p/w1280/" +this.state.movies[1]["backdrop_path"]}
            alt="Second slide img-responsive"
 
         />
-
+        </a>
         <Carousel.Caption>
           <h3>{this.state.movies[1]["title"]}</h3>
           <p>{this.state.movies[1][ "vote_average"]+"/10"}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+        <a href = {this.state.movies[2].id}>
         <img
           className="d-block carr img-responsive"
           src={"https://image.tmdb.org/t/p/w1280/" +this.state.movies[2]["backdrop_path"]}
           alt="Third slide"
          
         />
+        </a>
 
         <Carousel.Caption>
           <h3>{this.state.movies[2]["title"]}</h3>

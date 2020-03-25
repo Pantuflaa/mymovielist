@@ -240,3 +240,19 @@
         </Container>
     </div>
 );
+
+
+<InputGroup size="md">
+<FormControl
+placeholder="Buscar"
+
+aria-describedby="basic-addon2"
+maxLength={255}
+onChange={this.handleChange}
+value= {this.state.valor}
+
+/>
+<InputGroup.Append>
+    <Button variant="outline-success" onClick={this.buscar}>Buscar</Button>
+</InputGroup.Append>
+</InputGroup>

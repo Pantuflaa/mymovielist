@@ -116,3 +116,10 @@
     margin-left: auto;
     margin-right: auto; 
 }
+
+.derecha{
+    margin-left: auto;
+}
+.izquierda{
+    margin-right: auto;
+}
