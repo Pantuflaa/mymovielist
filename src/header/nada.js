@@ -86,3 +86,157 @@
     <Form inline> <Button variant="outline-danger">Logeate</Button>{' '}</Form>  
 </Navbar.Collapse>
 </Navbar>
+
+
+
+
+
+
+
+(
+    <div>
+        <Container fluid>
+            <Row className = "color2">
+                <Col className = "text">
+                    <span className = "title">{this.state.estandar.data.title} </span><span className = "year">({this.state.estandar.data.release_date.split("-")[0]})</span>
+                </Col>
+                <Col>    
+                    <img
+                        id = "star"
+                        height = "50px"
+                        width = "50px"
+                        className="mr-3"
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png"
+                        alt="Generic placeholder"
+                    />                         
+                </Col>
+                <Col>
+                    <span className = "rate">{this.state.estandar.data.vote_average}/10</span>
+                    <br></br>
+                    <span className = "cont">{this.state.estandar.data.vote_count}</span>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <img
+                        id = "movie"
+                        className="mr-3"
+                        src={"https://image.tmdb.org/t/p/w500/"+this.state.estandar.data.poster_path}
+                        alt="Generic placeholder"
+                    />
+                </Col>
+                <Col>
+                    <Row>
+                        <Media.Body className = "text">
+                            <p className = "color3" id = "rcorners1" >
+                                {this.state.estandar.data.overview}           
+                            </p>
+                                <p align = "left"> 
+                                    <strong> Director: </strong> 
+                                    {this.state.directore.map(
+                                         (director) => director.name+" "
+                                    )}
+                                     <br /> 
+                                    <strong> Writers: </strong> 
+                                    {this.state.escritore.map(
+                                         (escritor) => escritor.name+" "
+                                    )}
+                                     <br /> 
+                                    <strong> Stars: </strong> 
+                                    {this.state.actore.map(
+                                         (actor) => actor.name+" "
+                                    )}
+                                     <br /> 
+                                </p>
+                        </Media.Body>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <video id = "video" width="400" controls>
+                                <source src="https://www.youtube.com/watch?v=rZD6nMlC3tE" type="video/ogg"/>
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+            <Row>
+                
+            </Row>
+        </Container>
+    </div>
+)
+
+(
+    <div>
+        <Container fluid>
+            <Row className = "color2">
+                <Col className = "text">
+                    <span className = "title">{this.state.estandar[0].title} </span><span className = "year">({this.state.estandar[0]["release_date"].split("-")[0]})</span>
+                </Col>
+                <Col>    
+                    <img
+                        id = "star"
+                        height = "50px"
+                        width = "50px"
+                        className="mr-3"
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png"
+                        alt="Generic placeholder"
+                    />                         
+                </Col>
+                <Col>
+                    <span className = "rate">{this.state.estandar[0].vote_average}/10</span>
+                    <br></br>
+                    <span className = "cont">{this.state.estandar[0].vote_count}</span>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <img
+                        id = "movie"
+                        className="mr-3"
+                        src={"https://image.tmdb.org/t/p/w500/"+this.state.estandar[0].poster_path}
+                        alt="Generic placeholder"
+                    />
+                </Col>
+                <Col>
+                    <Row>
+                        <Media.Body className = "text">
+                            <p className = "color3" id = "rcorners1" >
+                                {this.state.estandar[0].overview}           
+                            </p>
+                                <p align = "left"> 
+                                    <strong> Director: </strong> 
+                                    {this.state.directore.map(
+                                         (director) => director.name+" "
+                                    )}
+                                     <br /> 
+                                    <strong> Writers: </strong> 
+                                    {this.state.escritore.map(
+                                         (escritor) => escritor.name+" "
+                                    )}
+                                     <br /> 
+                                    <strong> Stars: </strong> 
+                                    {this.state.actore.map(
+                                         (actor) => actor.name+" "
+                                    )}
+                                     <br /> 
+                                </p>
+                        </Media.Body>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <video id = "video" width="400" controls>
+                                <source src="https://www.youtube.com/watch?v=rZD6nMlC3tE" type="video/ogg"/>
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+            <Row>
+                
+            </Row>
+        </Container>
+    </div>
+);
