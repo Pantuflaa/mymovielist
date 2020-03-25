@@ -10,32 +10,36 @@ const Movie = () =>{
         <div>
             <Container fluid>
                 <Row className = "color2">
-                    <Col className = "text" id = "synopsis">
-                        <h1 >1917</h1>
-                        <h6 >(2019)</h6> 
-                        <div>
-                            <img
-                                id = "star"
-                                height = "4%"
-                                width = "4%"
-                                className="mr-3"
-                                src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png"
-                                alt="Generic placeholder"
-                            />   
-                        </div>
+                    <Col className = "text">
+                        <span className = "title">1917 </span><span className = "year">(2019)</span>
+                    </Col>
+                    <Col>    
+                        <img
+                            id = "star"
+                            height = "50px"
+                            width = "50px"
+                            className="mr-3"
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png"
+                            alt="Generic placeholder"
+                        />                         
+                    </Col>
+                    <Col>
+                        <span className = "rate">8.5/10</span>
+                        <br></br>
+                        <span className = "cont">100</span>
                     </Col>
                 </Row>
                 <Row>
-                    <Media>
-                        <Col>
-                            <img
-                                id = "movie"
-                                className="mr-3"
-                                src="https://www.uphe.com/sites/default/files/styles/scale__344w_/public/2020/02/1917_PosterArt.jpg?itok=iTpeF08o"
-                                alt="Generic placeholder"
-                            />
-                        </Col>
-                        <Col xs = {9}>
+                    <Col>
+                        <img
+                            id = "movie"
+                            className="mr-3"
+                            src="https://www.uphe.com/sites/default/files/styles/scale__344w_/public/2020/02/1917_PosterArt.jpg?itok=iTpeF08o"
+                            alt="Generic placeholder"
+                        />
+                    </Col>
+                    <Col>
+                        <Row>
                             <Media.Body className = "text">
                                 <p className = "color3" id = "rcorners1" >
                                     April 6th, 1917. As a regiment assembles to wage war deep in enemy territory,
@@ -48,8 +52,19 @@ const Movie = () =>{
                                         <strong> Stars: </strong> Dean-Charles Chapman, George MacKay, Daniel Mays | See full cast & crew <br /> 
                                     </p>
                             </Media.Body>
-                        </Col>
-                    </Media>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <video id = "video" width="400" controls>
+                                    <source src="https://www.youtube.com/watch?v=rZD6nMlC3tE" type="video/ogg"/>
+                                    Your browser does not support HTML5 video.
+                                </video>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    
                 </Row>
             </Container>
         </div>

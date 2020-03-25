@@ -36,17 +36,20 @@
     margin-left: 60%;
 }
 .text{
+    text-align: left;
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
 #rcorners1 {
-    border-radius: 25px;
+    border-radius: 20px;
     background: #0b4f6c;
     padding: 20px;
     margin-top: 15px;
+    margin-right: auto;
   }
 #star{
-    margin-left: 80%;
+    margin-top: 10px;
+    margin-left: 93%;
 }
 #movie{
     margin-top: 15px;
@@ -63,4 +66,33 @@
 }
 .carr2{
     margin-top: 8px;
+}
+.carr3{
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+#reco{
+    width: 100%;  
+    height: 100%;
+}
+.title{
+    font-size: 300%;
+}
+#video{
+    margin-top: 30px;
+}
+.rate{
+    font-family: "Times New Roman";
+    font-size: 170%;
+    color: white;
+    margin-right: 100%;
+    text-shadow: 2px 2px 1px #000000;
+}
+.cont{
+    font-family: "Times New Roman";
+    font-size: 100%;
+    color: white;
+    margin-right: 100%;
+    text-shadow: 2px 2px 1px #000000;
 }
